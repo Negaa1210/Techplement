@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Selling Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    
+
+<header class="header">
+    <div class="header-1">
+        <a href="#" class="logo"><i class="fas fa-book"></i>Edu.</a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here...." id="seach-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+           
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <span>0</span>
+
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#courses">courses</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </div>
+</header>
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#revies" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <form action="">
+        <h3>sign in</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="sign in" class="btn">
+        <p>forget password ? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">create one</a></p>
+    </form>
+</div>
+
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3><span>Online</span><span>Education</span></h3>
+            <a href="#contact" class="btn">contact us</a>
+        </div>
+        <div class="image">
+            <img src="home.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="count">
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="content">
+                <h3>200+</h3>
+                <p>courses</p>
+            </div> 
+        </div>
+        <div class="box">
+            <i class="fas fa-user-graduate"></i>
+            <div class="content">
+                <h3>1800+</h3>
+                <p>students</p>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-chalkboard-user"></i>
+            <div class="content">
+                <h3>60+</h3>
+                <p>teachers</p>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-face-smile"></i>
+            <div class="content">
+                <h3>100%</h3>
+                <p>satisfaction</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="row">
+        <div class="image">
+            <img src="home1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, id. Itaque incidunt nesciunt at rerum temporibus, deleniti eius delectus commodi.</p>
+            <a href="#contact" class="btn">contact us</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="courses" id="courses">
+    <h1 class="heading">our <span>Courses</span></h1>
+    <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <img src="course-1.png" alt="">
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusamus nihil officiis aut a possimus.</p>
+                <button class="price-btn">$99</button>
+                <div id="cart">
+                    <button class="cart-btn" data-course="Web development">Add to Cart</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <img src="course2.jpg" alt="">
+                <h3>digital marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusamus nihil officiis aut a possimus.</p>
+                <button class="price-btn">$129</button>
+                <div id="cart">
+                    <button class="cart-btn" data-course="Digital Marketing">Add to Cart</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <img src="course3.jpg" alt="">
+                <h3>Artificial Intelligence</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusamus nihil officiis aut a possimus.</p>
+                <button class="price-btn">$149</button>
+                <div id="cart">
+                    <button class="cart-btn" data-course="Artificial Intelligence">Add to Cart</button>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <img src="course4.jpg" alt="">
+                <h3>DataBase Management System</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum accusamus nihil officiis aut a possimus.</p>
+                <button class="price-btn">$79</button>
+                <div id="cart"> 
+                <button class="cart-btn" data-course="Database Management System">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="reviews" id="reviews">
+    <h1 class="heading"> student's <span>reviews</span></h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus necessitatibus ipsa cum voluptatibus veniam!</p>
+                <div class="user">
+                    <img src="review1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>John deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus necessitatibus ipsa cum voluptatibus veniam!</p>
+                <div class="user">
+                    <img src="review2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>John deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus necessitatibus ipsa cum voluptatibus veniam!</p>
+                <div class="user">
+                    <img src="review3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>John deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam possimus necessitatibus ipsa cum voluptatibus veniam!</p>
+                <div class="user">
+                    <img src="review4.jpg" alt="">
+                    <div class="user-info">
+                        <h3>John deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span> us</h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/home.jpg" alt="">
+        </div>
+        <form action="" method="post">
+            <span>your name</span>
+            <input type="text" required placeholder="enter your full name" maxlength="50" 
+            name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="enter your valid email" maxlength="50" 
+            name="email" class="box">
+            <span>your number</span>
+            <input type="number" required placeholder="enter your valid number" max="99999999999" 
+            min="0" name="number" class="box" onkeypress="if(this.value.length==10) return false;">
+            <span>select course</span>
+            <select name="courses" class="box">
+                <option value="" disabled selected>select the course --</option>
+                <option value="Web development">web development</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Database Management System">Database Management System</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Data Analysis">Data Analysis</option>
+                <option value="engineering">engineering</option>
+                <option value="graphic design">graphic design</option>
+            </select>
+            <span>select gender</span>
+            <div class="radio">
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">female</label>
+            </div>
+            <input type="submit" value="send message" class="btn" name="send">
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <section>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+        </div>
+        <div class="credit">&copy; copyright @ 2022 by <span>Ms. Neha</span> | all
+        rights reserved</div>
+    </section>
+
+    
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
